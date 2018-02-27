@@ -219,7 +219,7 @@
       </div>
       <!-- /.container -->
     </footer>
-
+  
     <!-- Bootstrap core JavaScript -->
     <script src="${css}/jquery.min.js"></script>
     <script src="${css}/js/bootstrap.bundle.min.js"></script>
