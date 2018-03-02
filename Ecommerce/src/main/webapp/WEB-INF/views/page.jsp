@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <spring:url var="css" value="/resources/css" />
@@ -18,7 +19,7 @@
 	content="Online Shopping Website Using Spring MVC and Hibernate">
 <meta name="author" content="AIT BAHA ISMAIL">
 
-<title>Online Shopping - ${title}</title>
+<title>${title}</title>
 
 <script>
 	window.menu = '${title}';
@@ -47,7 +48,7 @@
 <body>
 	<div class="wrapper">
 	<!-- Navigation -->
-	<%@include file="./shared/navbar.jsp"%>
+	 <%@include file="./shared/navbar.jsp"%>
 	<!-- Page Content -->
 	
 	<div class="wrapper">
@@ -60,8 +61,8 @@
 	<c:if test="${userCliccontact == true }">
 		<%@include file="contact.jsp"%>
 	</c:if>
-	<c:if test="${userClicklisteproducts == true }">
-		<%@include file="listproduct.jsp"%>
+	<c:if test="${userClickallproducts == true  or userClickcategoryproducts == true}">
+		<%@include file="listProducts.jsp"%>
 	</c:if>
 	</div>
 	<!-- Footer -->

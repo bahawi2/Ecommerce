@@ -1,6 +1,7 @@
 /**
  * 
  */
+$('#a_'+menu).addClass('active');
 switch (menu) {
 	case 'home':
 		$('#home').addClass('active');
@@ -11,8 +12,9 @@ switch (menu) {
 	case 'contact':
 		$('#contact').addClass('active');
 		break;
-	case 'listeproducts':
-		$('#listeproducts').addClass('active');
-		break;		
+		default:
+			$('#listeproducts').addClass('active');
+			
+			break;
 
 	}

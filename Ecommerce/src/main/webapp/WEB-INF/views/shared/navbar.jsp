@@ -15,11 +15,11 @@
             <li class="nav-item" id="about">
               <a class="nav-link" href="${contextRoot}/Ecommerce/about">About</a>
             </li>
-            <li class="nav-item" id="listeproducts">
-              <a class="nav-link" href="${contextRoot}/Ecommerce/listeproducts">View Products</a>
-            </li>
             <li class="nav-item" id="contact">
               <a class="nav-link" href="${contextRoot}/Ecommerce/contact">Contact</a>
+            </li>
+             <li class="nav-item" id="listeproducts">
+              <a class="nav-link" href="${contextRoot}/Ecommerce/show/all/products">View Products</a>
             </li>
           </ul>
         </div>
